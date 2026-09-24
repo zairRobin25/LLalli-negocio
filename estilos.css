@@ -1,0 +1,350 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background: #0f172a;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px #00000030;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* ===== PORTADA ===== */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    color: white;
+
+    background:
+        linear-gradient(120deg, #0f172a, #075985, #0284c7);
+}
+
+.hero-contenido {
+    max-width: 650px;
+}
+
+.hero-pequeno {
+    color: #7dd3fc;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 60px;
+    margin: 15px 0;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* ===== BOTONES ===== */
+
+.boton {
+    display: inline-block;
+    background: #38bdf8;
+    color: #082f49;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* ===== SECCIONES ===== */
+
+.seccion,
+.pagina {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.seccion h2,
+.pagina h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.subtitulo {
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+/* ===== TARJETAS ===== */
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.tarjeta {
+    background: white;
+    width: 290px;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px #00000012;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px #0284c730;
+}
+
+.tarjeta-icono {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0f2fe;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.tarjeta h3 {
+    margin: 20px 0 12px;
+    color: #0f172a;
+}
+
+.tarjeta p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* ===== NOSOTROS ===== */
+
+.pagina > p {
+    max-width: 750px;
+    margin: 15px auto;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.info div {
+    background: white;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #00000012;
+}
+
+.info h3 {
+    color: #0284c7;
+    margin-bottom: 15px;
+}
+
+/* ===== PRODUCTOS ===== */
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.producto {
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #00000015;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+}
+
+.foto {
+    height: 180px;
+    background: linear-gradient(135deg, #dbeafe, #bae6fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    border-radius: 13px;
+}
+
+.producto h3 {
+    margin: 18px 0 8px;
+}
+
+.producto p {
+    color: #64748b;
+}
+
+.producto strong {
+    display: block;
+    color: #0284c7;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.producto button {
+    width: 100%;
+    border: none;
+    background: #0f172a;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.producto button:hover {
+    background: #0284c7;
+}
+
+/* ===== CONTACTO ===== */
+
+.contacto {
+    background: linear-gradient(135deg, #0f172a, #075985);
+    color: white;
+}
+
+.contacto h2 {
+    color: white;
+}
+
+.contacto > p {
+    color: #cbd5e1;
+}
+
+.datos {
+    background: white;
+    color: #1e293b;
+    max-width: 550px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 2;
+    box-shadow: 0 10px 30px #00000030;
+}
+
+.whatsapp {
+    background: #22c55e;
+    color: white;
+}
+
+.whatsapp:hover {
+    background: #16a34a;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px;
+}
+
+footer strong {
+    color: #38bdf8;
+}
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 750px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 8%;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .seccion,
+    .pagina {
+        padding: 60px 7%;
+    }
+}
+
+
